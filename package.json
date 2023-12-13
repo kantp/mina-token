@@ -1,0 +1,17 @@
+{
+  "name": "mina-token",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@mina-token/token": "workspace:*",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "o1js": "^0.13.0"
+  }
+}

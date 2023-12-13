@@ -1,0 +1,17 @@
+{
+    "name": "@mina-token/token",
+    "version": "1.0.0",
+    "main": "src/index.ts",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "bun run --watch src/index.ts"
+    },
+    "dependencies": {
+      "o1js": "^0.13.0",
+      "typescript": "^5.0.0"
+    },
+    "devDependencies": {
+      "bun-types": "latest"
+    },
+    "module": "src/index.js"
+  }
