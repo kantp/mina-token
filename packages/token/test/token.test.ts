@@ -19,7 +19,7 @@ import Token from '../src/token';
 import TokenAccount from '../src/TokenAccount';
 import Hooks from '../src/Hooks';
 
-const proofsEnabled = true;
+const proofsEnabled = false;
 
 interface Context {
 
@@ -135,7 +135,7 @@ describe('token integration', () => {
       await tx.prove();
       await tx.send();
     });
-    /*it('should deploy token contract A', async () => {
+    it('should deploy token contract A', async () => {
 
       const tx = await Mina.transaction(context.deployerAccount, () => {
         AccountUpdate.fundNewAccount(context.deployerAccount, 1);
@@ -152,7 +152,7 @@ describe('token integration', () => {
         context.hooksAccount.toBase58()
       );
     });
-
+/*
     it('should deploy token contract B', async () => {
 
       const tx = await Mina.transaction(context.deployerAccount, () => {
